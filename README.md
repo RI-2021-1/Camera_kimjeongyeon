@@ -32,3 +32,11 @@ image 관련 패키지도 설치해준다.
 ```$ roscore```
 
 ```$ rosrun uvc_camera uvc_camera_node```
+
+**토픽 메시지 확인**
+
+다음과 같은 명령어로 토픽 메시지를 확인해 카메라 정보와 이미지 정보가 퍼블리시되고 있음을 볼 수 있다.
+
+```$ rostopic list```
+
+![camera_topicmessage](https://user-images.githubusercontent.com/84000076/121798594-34d27080-cc62-11eb-98b1-a5d9dc159e18.png)
