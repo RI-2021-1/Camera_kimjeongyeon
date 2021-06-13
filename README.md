@@ -35,8 +35,24 @@ image 관련 패키지도 설치해준다.
 
 **토픽 메시지 확인**
 
-다음과 같은 명령어로 토픽 메시지를 확인해 카메라 정보와 이미지 정보가 퍼블리시되고 있음을 볼 수 있다.
+다음과 같은 명령어로 토픽 메시지를 확인해 카메라 정보(camera_info)와 이미지 정보(image_raw)가 퍼블리시되고 있음을 볼 수 있다.
 
 ```$ rostopic list```
 
 ![camera_topicmessage](https://user-images.githubusercontent.com/84000076/121798594-34d27080-cc62-11eb-98b1-a5d9dc159e18.png)
+
+**image_view 노드를 통한 이미지 정보 확인**
+
+이미지 정보를 확인할 수 있는 image_view 노드를 실행한다. 실행시 아래와 같이 작은 창에 카메라의 이미지가 표시된다.
+
+```$ rosrun image_view image_view image:=/image_raw```
+
+![camera_imageview](https://user-images.githubusercontent.com/84000076/121798669-972b7100-cc62-11eb-9226-59011c9b77c9.png)
+
+**rqt_image_view 노드를 통한 이미지 정보 확인**
+
+rqt_image_view는 image_view에 rqt 플러그인으로 GUI 요소가 추가된 것이다. 실행 후에도 실행된 이미지 뷰어 GUI 상에서 토픽을 선택할 수 있다.
+
+```$ rqt_image_view image:=/image_raw```
+
+![camera_rqt_image_view](https://user-images.githubusercontent.com/84000076/121798752-03a67000-cc63-11eb-8ad2-0c3a8b970310.png)
