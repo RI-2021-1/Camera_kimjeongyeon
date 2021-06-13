@@ -13,6 +13,7 @@
 
 ![camera_lsusb](https://user-images.githubusercontent.com/84000076/121798411-1fa91200-cc61-11eb-9542-7a0f4ed1c72c.png)
 
+
 **uvc camera 패키지 설치**
 
 다음으로 ros 버전에 맞는 uvc camera 패키지를 설치한다.
@@ -25,6 +26,7 @@ image 관련 패키지도 설치해준다.
 
 ```$ sudo apt-get install ros-melodic-rqt-image-view```
 
+
 **uvc_camera 노드 실행**
 
 다음과 같은 명령어로 uvc_camera 노드를 실행한다.
@@ -32,6 +34,7 @@ image 관련 패키지도 설치해준다.
 ```$ roscore```
 
 ```$ rosrun uvc_camera uvc_camera_node```
+
 
 **토픽 메시지 확인**
 
@@ -41,6 +44,7 @@ image 관련 패키지도 설치해준다.
 
 ![camera_topicmessage](https://user-images.githubusercontent.com/84000076/121798594-34d27080-cc62-11eb-98b1-a5d9dc159e18.png)
 
+
 **image_view 노드를 통한 이미지 정보 확인**
 
 이미지 정보를 확인할 수 있는 image_view 노드를 실행한다. 실행시 아래와 같이 작은 창에 카메라의 이미지가 표시된다.
@@ -49,6 +53,7 @@ image 관련 패키지도 설치해준다.
 
 ![camera_imageview](https://user-images.githubusercontent.com/84000076/121798669-972b7100-cc62-11eb-9226-59011c9b77c9.png)
 
+
 **rqt_image_view 노드를 통한 이미지 정보 확인**
 
 rqt_image_view는 image_view에 rqt 플러그인으로 GUI 요소가 추가된 것이다. 실행 후에도 실행된 이미지 뷰어 GUI 상에서 토픽을 선택할 수 있다.
@@ -56,6 +61,7 @@ rqt_image_view는 image_view에 rqt 플러그인으로 GUI 요소가 추가된 �
 ```$ rqt_image_view image:=/image_raw```
 
 ![camera_rqt_image_view](https://user-images.githubusercontent.com/84000076/121798752-03a67000-cc63-11eb-8ad2-0c3a8b970310.png)
+
 
 **Rviz를 통한 이미지 정보 확인**
 
