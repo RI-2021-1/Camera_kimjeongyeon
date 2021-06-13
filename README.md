@@ -67,4 +67,7 @@ Rviz가 실행되면 왼쪽 하단의 Add 버튼을 클릭하여 display type에
 
 ![rviz_1](https://user-images.githubusercontent.com/84000076/121798793-5b44db80-cc63-11eb-84a3-fff12caa99d6.png)
 
-그 다음 Image Topic의 값을 /image_raw로 변경한다.
+그 다음 Image Topic의 값을 '/image_raw'로 변경한다. 변경 후 다음과 같이 이미지가 표시된다.
+
+![rviz_2](https://user-images.githubusercontent.com/84000076/121798832-947d4b80-cc63-11eb-9181-8df5d0df6eb8.png)
+
