@@ -22,4 +22,13 @@
 image 관련 패키지도 설치해준다.
 
 ```$ sudo apt-get install ros-melodic-image-*```
+
 ```$ sudo apt-get install ros-melodic-rqt-image-view```
+
+**uvc_camera 노드 실행**
+
+다음과 같은 명령어로 uvc_camera 노드를 실행한다.
+
+```$ roscore```
+
+```$ rosrun uvc_camera uvc_camera_node```
