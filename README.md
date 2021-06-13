@@ -56,3 +56,15 @@ rqt_image_view는 image_view에 rqt 플러그인으로 GUI 요소가 추가된 �
 ```$ rqt_image_view image:=/image_raw```
 
 ![camera_rqt_image_view](https://user-images.githubusercontent.com/84000076/121798752-03a67000-cc63-11eb-8ad2-0c3a8b970310.png)
+
+**Rviz를 통한 이미지 정보 확인**
+
+먼저 Rviz를 실행한다.
+
+```$ rviz```
+
+Rviz가 실행되면 왼쪽 하단의 Add 버튼을 클릭하여 display type에서 Image를 선택한다.
+
+![rviz_1](https://user-images.githubusercontent.com/84000076/121798793-5b44db80-cc63-11eb-84a3-fff12caa99d6.png)
+
+그 다음 Image Topic의 값을 /image_raw로 변경한다.
